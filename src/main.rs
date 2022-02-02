@@ -230,8 +230,8 @@ fn main() {
     while game.is_running {
         ncurses::clear();
 
-        game.render();
         game.update();
+        game.render();
 
         ncurses::refresh();
 
